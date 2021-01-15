@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+
+Name=KDevHelloWorld
+GenericName=A Simple KDE Application
+Icon=kdevhelloworld
+
+Exec=kdevhelloworld
+StartupWMClass=kdevhelloworld

@@ -1,24 +1,23 @@
-QT       += core gui
+TEMPLATE = app
+TARGET = notepad
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+QT += widgets
 
-CONFIG += c++11
-
-# You can make your code fail to compile if it uses deprecated APIs.
-# In order to do so, uncomment the following line.
-#DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
+qtHaveModule(printsupport): QT += printsupport
+requires(qtConfig(fontdialog))
 
 SOURCES += \
-    main.cpp \
+    main.cpp\
     notepad.cpp
 
-HEADERS += \
-    notepad.h
+HEADERS += notepad.h
 
-FORMS += \
-    notepad.ui
+FORMS += notepad.ui
 
-# Default rules for deployment.
-qnx: target.path = /tmp/$${TARGET}/bin
-else: unix:!android: target.path = /opt/$${TARGET}/bin
-!isEmpty(target.path): INSTALLS += target
+RESOURCES += \
+    notepad.qrc \
+    notepad.qrc
+
+# install
+target.path = $$[QT_INSTALL_EXAMPLES]/widgets/tutorials/notepad
+INSTALLS += target
