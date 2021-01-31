@@ -34,7 +34,7 @@ GUIFramworks - Test programs for C/C++ Framworks.
     with this program; if not, write to the Free Software Foundation, Inc.,
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-[wxWidgets][https://www.wxwidgets.org/about/licence/]
-[QT][https://doc.qt.io/qt-5/licensing.html]
-[KDE][https://develop.kde.org/products/frameworks/]
-[GTK][https://gitlab.gnome.org/GNOME/gtk/-/blob/master/COPYING]
+[wxWidgets](https://www.wxwidgets.org/about/licence/)
+[QT](https://doc.qt.io/qt-5/licensing.html)
+[KDE](https://develop.kde.org/products/frameworks/)
+[GTK](https://gitlab.gnome.org/GNOME/gtk/-/blob/master/COPYING)
