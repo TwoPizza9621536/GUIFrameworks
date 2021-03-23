@@ -6,16 +6,16 @@
 For the best compatibaly this repo is license under
 GPL-2 or later license.
 
-wxWidgets is under a modified LGPL license called
+[wxWidgets][1] is under a modified LGPL license called
 [wxWidgets license][wxWidgwets].
 
-QT is under [LGPL3+, GPL2&3+][QT], and [additional
+[QT][2] is under [LGPL3+, GPL2&3+][QT], and [additional
 license](https://doc.qt.io/qt-5/licenses-used-in-qt.html)
 for the framwork.
 
-KDE is under [LGPL and MIT][KDE].
+[KDE][3] is under [LGPL and MIT][KDE].
 
-GTK is under [LGPL2+][GTK].
+[GTK][4] is under [LGPL2+][GTK].
 
 GUIFramworks - Test programs for C/C++ Framworks.
     Copyright (C) 2021-present  Sam W
@@ -33,6 +33,11 @@ GUIFramworks - Test programs for C/C++ Framworks.
     You should have received a copy of the GNU General Public License along
     with this program; if not, write to the Free Software Foundation, Inc.,
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+[1]: <https://www.wxwidgets.org>
+[2]: <https://www.qt.io>
+[3]: <https://www.kde.org>
+[4]: <https://www.gtk.org>
 
 [wxWidgets](https://www.wxwidgets.org/about/licence/)
 [QT](https://doc.qt.io/qt-5/licensing.html)
