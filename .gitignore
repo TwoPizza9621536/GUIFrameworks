@@ -554,3 +554,7 @@ Thumbs.db
 *.exe
 *.out
 *.app
+
+build/
+.history/
+
