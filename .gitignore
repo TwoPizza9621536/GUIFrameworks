@@ -1,5 +1,9 @@
 *
 
+!makefile
+
+Makefiles*
+
 !*.*
 
 !*/
@@ -364,7 +368,6 @@ MigrationBackup/
 
 
 # globs
-Makefile.in
 *.userprefs
 *.usertasks
 config.make
