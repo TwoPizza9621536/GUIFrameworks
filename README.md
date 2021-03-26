@@ -6,6 +6,8 @@
 For the best compatibaly this repo is license under
 GPL-2 or later license.
 
+But they are mostly tutorials from each frameworks.
+
 [wxWidgets][1] is under a modified LGPL license called
 [wxWidgets license][wxWidgwets].
 

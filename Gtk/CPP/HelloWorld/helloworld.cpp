@@ -18,7 +18,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
  * MA 02110-1301, USA.
  *
- * 
+ *
  * From https://www.gtk.org/docs/language-bindings/cpp/
  *
  */
@@ -26,22 +26,19 @@
 #include "helloworld.h"
 #include <iostream>
 
-// Creates a new button with label "Hello World".
-HelloWorld::HelloWorld() : m_button("HelloWorld")
+// Create a new button with label "Hello World".
+HelloWorld::HelloWorld() : m_button("Hello World")
 {
-	// Set the border width of the window.
-	set_border_width(10);
-	
-	// When the button receives the "clicked" signal, it will call the
-	// on_button_clicked() method defined below.
-	m_button.signal_clicked().connect(sigc::mem_fun
-									 (*this, &HelloWorld::on_button_clicked));
-	
-	// This packs the button into the Window (a container).
-	add(m_button);
-	
-	// The final step is to display this newly created widget...
-	m_button.show();
+    // Set the margin around the button.
+    m_button.set_margin(10);
+
+    // When the button recives the "clicked" signal, it will call the
+    // on_button_clicked() method defined below.
+    m_button.signal_clicked().connect(sigc::mem_fun(*this,
+                                      &HelloWorld::on_button_clicked));
+
+    // This packs the button into the Window (a container).
+    set_child(m_button);
 }
 
 HelloWorld::~HelloWorld()
@@ -50,5 +47,5 @@ HelloWorld::~HelloWorld()
 
 void HelloWorld::on_button_clicked()
 {
-	std::cout << "Hello World" << std::endl;
+    std::cout << "Hello World" << std::endl;
 }

@@ -1,5 +1,5 @@
 /*
- * helloworld.h
+ * helloworld.cpp
  *
  * Copyright 2021 Sam W <twopizza9621536@gmail.com>
  *
@@ -23,24 +23,32 @@
  *
  */
 
-#ifndef GTKMM_EXAMPLE_HELLOWORLD_H
-#define GTKMM_EXAMPLE_HELLOWORLD_H
+#include "helloworld.h"
+#include <iostream>
 
-#include <gtkmm/button.h>
-#include <gtkmm/window.h>
-
-class HelloWorld : public Gtk::Window
+// Creates a new button with label "Hello World".
+HelloWorld::HelloWorld() : m_button("HelloWorld")
 {
-public:
-    HelloWorld();
-    ~HelloWorld() override;
+	// Set the border width of the window.
+	set_border_width(10);
 
-protected:
-    // Signal handlers:
-    void on_button_clicked();
+	// When the button receives the "clicked" signal, it will call the
+	// on_button_clicked() method defined below.
+	m_button.signal_clicked().connect(sigc::mem_fun
+									 (*this, &HelloWorld::on_button_clicked));
 
-    // Member widgets:
-    Gtk::Button m_button;
-};
+	// This packs the button into the Window (a container).
+	add(m_button);
 
-#endif // GTKMM_EXAMPLE_HELLOWORLD_H
+	// The final step is to display this newly created widget...
+	m_button.show();
+}
+
+HelloWorld::~HelloWorld()
+{
+}
+
+void HelloWorld::on_button_clicked()
+{
+	std::cout << "Hello World" << std::endl;
+}

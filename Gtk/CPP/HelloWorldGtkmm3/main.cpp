@@ -1,5 +1,5 @@
 /*
- * helloworld.h
+ * main.cpp
  *
  * Copyright 2021 Sam W <twopizza9621536@gmail.com>
  *
@@ -18,29 +18,20 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
  * MA 02110-1301, USA.
  *
- *
+ * 
  * From https://www.gtk.org/docs/language-bindings/cpp/
  *
  */
 
-#ifndef GTKMM_EXAMPLE_HELLOWORLD_H
-#define GTKMM_EXAMPLE_HELLOWORLD_H
+#include "helloworld.h"
+#include <gtkmm/application.h>
 
-#include <gtkmm/button.h>
-#include <gtkmm/window.h>
-
-class HelloWorld : public Gtk::Window
+int main (int argc, char *argv[])
 {
-public:
-    HelloWorld();
-    ~HelloWorld() override;
-
-protected:
-    // Signal handlers:
-    void on_button_clicked();
-
-    // Member widgets:
-    Gtk::Button m_button;
-};
-
-#endif // GTKMM_EXAMPLE_HELLOWORLD_H
+	auto app = Gtk::Application::create(argc, argv, "org.gtkmm.example");
+	
+	HelloWorld helloworld;
+	
+	// Shows the window and returns when is closed.
+	return app -> run(helloworld);
+}

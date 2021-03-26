@@ -18,7 +18,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
  * MA 02110-1301, USA.
  *
- * 
+ *
  * From https://www.gtk.org/docs/getting-started/hello-world/
  *
  */

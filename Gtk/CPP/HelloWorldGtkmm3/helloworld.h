@@ -18,7 +18,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
  * MA 02110-1301, USA.
  *
- *
+ * 
  * From https://www.gtk.org/docs/language-bindings/cpp/
  *
  */
@@ -32,15 +32,15 @@
 class HelloWorld : public Gtk::Window
 {
 public:
-    HelloWorld();
-    ~HelloWorld() override;
+	HelloWorld();
+	virtual ~HelloWorld();
 
 protected:
-    // Signal handlers:
-    void on_button_clicked();
-
-    // Member widgets:
-    Gtk::Button m_button;
+	// Signal handlers:
+	void on_button_clicked();
+	
+	// Member widgets:
+	Gtk::Button m_button;
 };
 
-#endif // GTKMM_EXAMPLE_HELLOWORLD_H
+#endif
