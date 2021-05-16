@@ -6,6 +6,8 @@ LDFLAGS = `pkg-config --libs gtk4`
 PROGRAM = hello-world-gtk
 OBJECTS = $(PROGRAM).o
 
+.PHONY: all clean
+
 .SUFFIXES: .o .cpp
 
 .cpp.o:

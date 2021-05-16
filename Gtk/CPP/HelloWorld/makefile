@@ -6,6 +6,8 @@ LDFLAGS = `pkg-config --libs gtkmm-4.0`
 PROGRAM = helloworld
 OBJECTS = $(PROGRAM).o main.o
 
+.PHONY: all clean
+
 .SUFFIXES: .o .cpp
 
 .cpp.o:
