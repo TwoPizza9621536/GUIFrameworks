@@ -20,7 +20,7 @@ for the framwork.
 [GTK][4] is under [LGPL2+][GTK].
 
 GUIFramworks - Test programs for C/C++ Framworks.
-    Copyright (C) 2021-present  Sam W
+    Copyright (C) 2021  Samuel Wu
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
